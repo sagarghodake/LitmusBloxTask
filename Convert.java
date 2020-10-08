@@ -1,3 +1,5 @@
+package multithreading;
+
 import java.io.*;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -5,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class Convert {
 	public static void main(String[] args) {
-		String fileContenet=readFileAndWrittenContentInString(new File("C:\\Users\\raagh\\Downloads\\JavaProject (2) (1).csv"));
+		String fileContenet=readFileAndWrittenContentInString(new File("C:\\Users\\sagar\\Downloads\\JavaProject.csv"));
 		double fixedCostTotal=0,totalActualHours=0;
 		System.out.println("TASK 1");
 		System.out.println(fileContenet);
@@ -39,9 +41,9 @@ public class Convert {
 				content=content+(char)data;
 			}
 		} catch (FileNotFoundException e) {
-			System.out.println("input file not found at specifiad path.check if file present in path specified." + e.getMessage());
+			System.out.println("Input file not found at specifiad path.Check if file present in path specified." + e.getMessage());
 		} catch (IOException e) {
-			System.out.println("problem reading input file. "+e.getMessage());
+			System.out.println("Problem in reading input file. "+e.getMessage());
 		}
 
 		return content;
