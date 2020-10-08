@@ -8,10 +8,4 @@ Will print Status, Priority, Deadline, Fixed Cost, Actual Hrs columns in the con
 
 Will print the total of Fixed Cost & Actual Hrs columns.
 
-You will be evaluated on:
 
-Your code
-
-Its functionality
-
-How you deliver the code
